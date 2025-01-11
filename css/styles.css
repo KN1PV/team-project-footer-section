@@ -92,7 +92,6 @@ a {
 
 @media screen and (min-width: 1280px) {
     .footer-content {
-        /* padding: 40px 40px 40px 28px; */
         width: 1216px;
         height: 400px;
     }
@@ -118,10 +117,6 @@ a {
     }
 }
 
-@media screen and (min-width: 1280px) {
-
-}
-
 .footer-icons-ul {
     display: flex;
     gap: 10px;
@@ -138,8 +133,6 @@ a {
     }
 }
 
-@media screen and (min-width: 1280px) {}
-
 .footer-icons-li {
     border: 1px solid rgba(251, 251, 251, 0.1);
     border-radius: 10px;
@@ -155,8 +148,6 @@ a {
         height: 36px;
     }
 }
-
-@media screen and (min-width: 1280px) {}
 
 .footer-icons-link {
     display: flex;
@@ -175,8 +166,6 @@ a {
     }
 }
 
-@media screen and (min-width: 1280px) {}
-
 .footer-phone {
     border: 1px solid rgba(251, 251, 251, 0.2);
     border-radius: 16px;
@@ -192,8 +181,6 @@ a {
         margin: 0;
     }
 }
-
-@media screen and (min-width: 1280px) {}
 
 .footer-phone-link {
     font-style: normal;
@@ -218,18 +205,20 @@ a {
     }
 }
 
-@media screen and (min-width: 1280px) {}
-
-
 @media screen and (min-width: 768px) {
     .cont-logo-icons-number {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 86px;
+        margin-bottom: 0;
     }
 }
 
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+    .cont-logo-icons-number {
+        /* display: flex;
+        justify-content: space-between; */
+    }
+}
 
 .footer-center-text {
     font-weight: 600;
@@ -248,15 +237,26 @@ a {
     .footer-center-text {
         font-size: 28px;
         line-height: 1.14;
-        width: 524px;
+        width: 524px; /* змінив ширину */
         height: 96px;
+        margin-top: 86px;
         margin-bottom: 100px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+    .footer-center-text {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+        top: -80px;
+        margin-bottom: 50px;
+    }
+}
 
 .footer-nav-ul {
     display: flex;
@@ -374,6 +374,7 @@ a {
     .footer-copyright {
         font-size: 14px;
         line-height: 1.29;
+        margin-bottom: 0;
     }
 }
 
